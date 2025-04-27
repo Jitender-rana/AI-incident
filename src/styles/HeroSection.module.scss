@@ -1,0 +1,42 @@
+.Hero{
+    display: flex;
+    
+    justify-content: center;
+    
+    
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    padding-left: 5rem;
+    
+
+
+
+
+    h1{
+        margin-top: 50px;
+        padding: 10px;
+        font-family: Inter;
+            font-size: 80.659px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 125.651px; /* 102.439% */
+            letter-spacing: -6.207px;
+        background: linear-gradient(292deg, #FFF 62.65%, #000 108.48%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+    h4{
+        background: linear-gradient(292deg, #FFF 62.65%, #000 108.48%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .heroimg{
+        
+        height: 600.451px;
+    }
+}

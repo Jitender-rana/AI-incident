@@ -1,0 +1,48 @@
+.incident_card {
+    
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: linear-gradient(292deg, #454545 62.65%, #000 108.48%);
+    box-shadow: 0 4px 8px rgba(224, 223, 223, 0.519);
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+    }
+  
+    .date {
+      margin: 0;
+      font-size: 14px;
+    }
+  
+    .toggle {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: none;
+      border: none;
+      color: #007bff;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 0;
+      white-space: nowrap; 
+    }
+  
+    .toggle:hover {
+      text-decoration: underline;
+    }
+  
+    .description {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    .toggle svg {
+        width: 16px;
+        height: 16px;
+      }
+      
+  }
+  

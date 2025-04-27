@@ -1,0 +1,53 @@
+.button {
+    padding: 8px 16px;
+    
+    border-radius: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  
+  
+  .primary {
+    background-color: white;
+    color: black;
+    height: 3rem;
+  }
+  
+  .secondary {
+    border-radius: 15.968px;
+    border: 1.996px solid rgba(255, 255, 255, 0.15);
+
+    background: rgba(219, 217, 217, 0.733);
+
+    box-shadow: 0px 0px 11.976px 5.988px rgb(255, 255, 255) inset;
+    backdrop-filter: blur(13.972150802612305px);
+
+  }
+  
+
+  .fullWidth {
+    width: 100%;
+  }
+  
+
+  .loading {
+    opacity: 0.45;
+    pointer-events: none; 
+  }
+  
+
+  .startIcon {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
