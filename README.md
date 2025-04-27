@@ -1,54 +1,121 @@
-# React + TypeScript + Vite
+# AI Safety Incident Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight web app to **create**, **filter**, and **sort** AI-related incidents based on severity and date.  
+Built with **React**, **TypeScript**, **TailwindCSS**, and **SCSS Modules** for styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Create new incidents using a modal form.
+- Filter incidents based on severity (Low, Medium, High).
+- Sort incidents by newest or oldest report date.
+- Modal prevents submission of empty title/description.
+- Responsive and minimal UI with TailwindCSS and custom SCSS.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Installation and Setup
+
+1. **Clone the Repository**
+
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Install Dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+or if you're using Yarn:
+
+```bash
+yarn install
+```
+
+3. **Start the Development Server**
+
+```bash
+npm run dev
+```
+
+or
+
+```bash
+yarn dev
+```
+
+The app will be available at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🧩 Project Structure
+
+| Folder | Purpose |
+| :--- | :--- |
+| `/components` | Reusable UI components like `Input`, `Button`, `IncidentCard`, `CreatecontentModal` |
+| `/styles` | SCSS modules for modular styling |
+| `/icons` | All SVG icons like `Plus`, `CrossIcon`, `Filter` |
+| `/pages` | Main pages (`Incident.tsx` to display the dashboard) |
+| `/types` | Common TypeScript types (optional) |
+
+---
+
+## ⚙️ How It Works
+
+- The **Incident** page displays a list of incidents.
+- The **Create Incident** button opens a modal to add a new incident.
+- Title, description, and severity are mandatory to create an incident.
+- Once submitted, the new incident appears immediately in the list.
+- You can **filter** incidents by severity and **sort** them by newest/oldest.
+- Form validation ensures that empty fields are not allowed.
+
+---
+
+## 📦 Built With
+
+- React 18
+- TypeScript
+- SCSS Modules
+- TailwindCSS
+- Vite or Next.js (depending on your setup)
+
+---
+
+## 📄 Available Scripts
+
+| Script | Purpose |
+| :--- | :--- |
+| `npm run dev` | Run the development server |
+| `npm run build` | Build the app for production |
+| `npm run preview` | Preview the production build |
+
+---
+
+## ✨ Future Improvements
+
+- Add toast notifications (for success/error).
+- Persist incidents using LocalStorage or backend database.
+- Add mobile responsiveness improvements.
+- Add delete and edit functionality for incidents.
+
+---
+
+## 🤝 Contribution
+
+Pull requests are welcome! Feel free to open issues or suggest improvements.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
