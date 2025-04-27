@@ -62,7 +62,7 @@ export function CreatecontentModal({open,onClose,onSubmit}:ModalProps){
                                     <button onClick={()=>{settype(SeverityTypes.Medium)}} disabled={type === SeverityTypes.Medium}>Medium</button>
                                     <button onClick={()=>{settype(SeverityTypes.High)}} disabled={type === SeverityTypes.High}>High</button>
                                 </div>
-                                <div className="flex justify-center mt-4">
+                                <div className={styled.buttonsubmit}>
                                     <button onClick={onSubmitContent}>Submit</button>
 
                                 </div>
