@@ -19,10 +19,26 @@ function IncidentCard({ title, description, Severity, Date }: IncidentCardProps)
     setShowDetails((prev) => !prev);
   }
 
+  const getSeverityColor = (severity: Severity) => {
+    switch (severity) {
+      case "High":
+        return styled.high_severity;
+      case "Medium":
+        return styled.medium_severity;
+      case "Low":
+        return styled.low_severity;
+      default:
+        return "";
+    }
+  };
+
   return (
     <div className={styled.incident_card}>
       <h2>{title}</h2>
-      <p><strong>Severity:</strong> {Severity}</p>
+      <p>
+        <strong>Severity:</strong>{" "}
+        <span className={getSeverityColor(Severity)}>{Severity}</span>
+      </p>
 
       {/* Header for Date + Toggle button */}
       <div className={styled.header}>
